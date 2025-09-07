@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eashgroup — East Africa Smart Hub | Automotive, Logistics, Construction, Agri‑Trade, Consulting, CSR</title>
+  <meta name="description" content="Eashgroup (East Africa Smart Hub) — Automotive sales in Ethiopia & Africa, integrated logistics on the Djibouti–Ethiopia corridor, construction management, agri‑trade, business consulting, and social responsibility programs." />
+  <link rel="canonical" href="https://www.eashgroup.com/" />
+  <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta property="og:title" content="Eashgroup — Driving Excellence Across Africa" />
+  <meta property="og:description" content="Automotive, logistics, construction management, agri‑trade, consulting, and social impact across Africa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eashgroup.com/" />
+  <meta property="og:image" content="https://www.eashgroup.com/og-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eashgroup — Driving Excellence Across Africa" />
+  <meta name="twitter:description" content="Automotive, logistics, construction, agri‑trade, consulting, and social impact across Africa." />
+  <meta name="twitter:image" content="https://www.eashgroup.com/og-cover.webp" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS with your public key
+  emailjs.init("Gv_TARHFx-rbHBfsi"); // Replace with your actual public key
+
+  function submitForm(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = event.target; // Get the form
+
+    emailjs.sendForm('service_liytq2g', 'template_uwtqcg7', form)
+      .then(() => {
+        alert('Message sent successfully!');
+        form.reset(); // Clear form after sending
+      }, (error) => {
+        console.error('FAILED...', error);
+        alert('Failed to send the message, please try again.');
+      });
+
+    return false; // Prevent page reload
+  }
+</script>
+
+
+
+  <!-- Brand variables: Master palette uses Deep Blue & Gold (Final Prompt). Alt vars include earlier Blue/Gold for easy switching. -->
+  <style>
+    :root{
+      /* Final Master Prompt colors */
+      --blue:#0A2540; /* Deep Blue */
+      --gold:#C9A227; /* Gold */
+      --light:#F4F4F4; /* Light Gray */
+      --text:#0a0f1a; /* Neutral dark text */
+      --muted:#6b7280; /* Gray for body text */
+      /* Alternate palette (earlier brief) */
+      --blue-alt:#202e5f; /* Primary Blue (alt) */
+      --gold-alt:#bda050; /* Accent Gold (alt) */
+      --white:#ffffff;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(0,0,0,.12);
+      --shadow-soft:0 6px 16px rgba(0,0,0,.08);
+      --maxw:1200px;
+    }
+    /* CSS Reset (trimmed) */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:"Open Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;line-height:1.6;color:var(--text);background:var(--white)}
+    h1,h2,h3{font-family:Montserrat,ui-sans-serif,system-ui;line-height:1.2;margin:0 0 .6rem;color:#0e1826}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.15rem;border-radius:999px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--gold);background:var(--gold);color:#111;box-shadow:var(--shadow-soft);transition:.25s ease}
+    .btn:hover{background:var(--white);color:var(--gold)}
+    .btn.alt{background:transparent;color:var(--gold)}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s ease, box-shadow .35s ease}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav.transparent{background:linear-gradient(to bottom, rgba(10,37,64,.9), rgba(10,37,64,.0));}
+    .nav.solid{background:var(--blue);box-shadow:0 4px 20px rgba(0,0,0,.25)}
+    .brand{display:flex;align-items:center;gap:.75rem;color:#fff;font-weight:800}
+    .brand img{width:36px;height:36px;border-radius:10px}
+    .menu{display:flex;gap:1rem}
+    .menu a{position:relative;color:#dbe6f5;font-weight:600;padding:.25rem .5rem;transition:color .25s ease}
+    .menu a:hover{color:var(--gold)}
+    .menu a.active{color:#fff}
+    .menu a .dot{position:absolute;left:50%;transform:translateX(-50%) scale(.6);bottom:-8px;width:6px;height:6px;border-radius:999px;background:var(--gold);opacity:0;transition:.25s ease}
+    .menu a.active .dot{opacity:1;transform:translateX(-50%) scale(1)}
+    .nav .hamb{display:none}
+
+    /* HERO */
+    .hero{display:flex;align-items:center;justify-content:center;text-align:center;min-height:100vh;background:url("port1.webp") center/cover no-repeat;color:#fff;}
+    .hero .wrap{max-width: 800px;transform: translateY(-20%);}
+    .headline{font-size:clamp(2rem,4vw,3.25rem);font-weight:800;color:#fff;letter-spacing:.01em}
+    .sub{color:var(--gold);font-weight:600;font-size:1.05rem;margin:.75rem 0 1.25rem}
+    .cta-row{display:flex;gap:.75rem;flex-wrap:wrap;justify-content: center;align-items: center}
+    .hero-art{position:relative;isolation:isolate}
+    .mesh{position:relative;aspect-ratio:1/1;border-radius:32px;background:linear-gradient(135deg, rgba(201,162,39,.12), rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(6px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08), var(--shadow);overflow:hidden}
+    
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+    /* SECTIONS */
+    section{scroll-margin-top:80px}
+    .sec{padding:80px 0}    
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg, transparent, rgba(10,37,64,.15), transparent);margin:30px 0}
+
+    /* ABOUT */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+    .card{background:#fff;border:1px solid #e9edf3;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-soft)}
+    .tag{display:inline-flex;align-items:center;gap:.4rem;background:#fff3d6;border:1px solid rgba(201,162,39,.35);color:#745f16;border-radius:999px;padding:.3rem .6rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.72rem}
+    .about-stats {display: grid;grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));gap: 1rem;margin-top: 2rem;text-align: center;}
+    .stat-box {background: #fff;padding: 1rem;border-radius: 12px;box-shadow: 0 4px 12px rgba(0,0,0,0.08);transition: transform 0.3s ease;}
+    .stat-box:hover {transform: translateY(-5px);}
+    .stat-box .num {display: block;font-size: 1.8rem;font-weight: 700;color: var(--blue);margin-bottom: 0.3rem;}
+
+
+
+    /* SERVICES */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .svc{position:relative;background:#fff;border:1px solid #f1e7c9;border-radius:20px;padding:22px;transition:.25s ease;box-shadow:var(--shadow-soft)}
+    .svc:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(201,162,39,.18)}
+    .svc .icon {font-size: 2rem;color: var(--blue);margin-bottom: 0.5rem;}
+    .svc h3{color:var(--blue)}
+    .svc p{color:#4b5563;margin:.35rem 0 0}
+    .card {aspect-ratio: 1;overflow: hidden;}
+    .card img {width: 100%;height: 100%;object-fit: contain;}
+
+
+    /* Reach */
+    .reach{background:linear-gradient(180deg,#f8fafc,#f4f4f4)}
+    .mapwrap{position:relative;border:1px solid #e7eef7;border-radius:24px;background:#fff;padding:18px;box-shadow:var(--shadow-soft)}
+
+    /* Contact */
+    .contact{background:var(--blue);color:#e9f1fb}
+    .contact h2{color:#fff}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    form input, form textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;outline:none}
+    form textarea{grid-column:1/-1;min-height:120px}
+    form input::placeholder, form textarea::placeholder{color:#d6e2f3}
+    .contact-card {display: flex;flex-direction: column;align-items: center;justify-content: center;width: 280px; height: 180px; padding: 15px;border-radius: 12px;border: 1px solid rgba(201,162,39,.35); background: #ffffff; box-shadow: 0 6px 12px rgba(201,162,39,.2); text-align: center;overflow: hidden;transition: transform .25s ease, box-shadow .25s ease;color: #1a1a1a; margin: 40px;}
+    .contact-card:hover {transform: translateY(-2px);box-shadow: 0 10px 18px rgba(201,162,39,.25);}
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+    .contact-card {
+        width: 90%;
+        height: auto;
+    }
+    }
+
+    /* Footer */
+    footer{background:var(--blue);color:#dbe6f5;border-top:1px solid rgba(255,255,255,.12)}
+    .foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between; padding: 30px 0px;}
+    .social{display:flex;gap:10px}
+    .social a{width:38px;height:38px;display:grid;place-content:center;border-radius:999px;border:1px solid rgba(201,162,39,.35);background:linear-gradient(180deg, rgba(201,162,39,.12), rgba(201,162,39,.05));transition:.25s ease}
+    .social a:hover{transform:translateY(-2px);box-shadow:0 10px 18px rgba(201,162,39,.2)}
+    .footer-link {color: inherit;text-decoration: none;}
+    .footer-link:hover {text-decoration: underline;}
+
+    /* Responsive */
+    @media (max-width: 980px){  
+      .hero-grid,.split,.grid{grid-template-columns:1fr}
+      .nav .hamb{display:grid}
+      .menu{position:fixed;inset:64px 0 auto 0;background:rgba(10,37,64,.98);backdrop-filter:blur(4px);padding:14px 20px;flex-direction:column;transform:translateY(-140%);transition:.3s ease}
+      .menu.open{transform:translateY(0%)}
+    }
+  </style>
+
+  <!-- Preload fonts (replace with your CDN or self-hosted) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD Schema (Organization + LocalBusiness + OfferCatalog + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"East Africa Smart Hub",
+    "url":"https://www.eashgroup.com",
+    "logo":"https://www.eashgroup.com/logo.png",
+    "areaServed":"Africa",
+    "sameAs":[
+      "https://www.linkedin.com/company/eashgroup",
+      "https://www.facebook.com/eashgroup",
+      "https://www.instagram.com/eashgroup",
+      "https://twitter.com/eashgroup"
+    ],
+    "contactPoint":[{
+      "@type":"ContactPoint",
+      "telephone":"+253 77853170",
+      "contactType":"customer service",
+      "areaServed":["DJ","ET","KE","UG","TZ","NG","ZA"],
+      "availableLanguage":["English","French","Arabic"]
+    }],
+    "department":[
+      {
+        "@type":"LocalBusiness",
+        "name":"Eashgroup Djibouti Office",
+        "address":{"@type":"PostalAddress","addressCountry":"DJ","addressLocality":"Djibouti City"},
+        "telephone":"+253 77853170"
+      },
+      {
+        "@type":"LocalBusiness",
+        "name":"Eashgroup Ethiopia Office",
+        "address":{"@type":"PostalAddress","addressCountry":"ET","addressLocality":"Addis Ababa"},
+        "telephone":"+251 91 236 5683"
+      }
+    ],
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Eashgroup Services",
+      "itemListElement":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Automotive Division","description":"Buy cars in Ethiopia and across Africa. High-end vehicles, armoured conversions, and electric vehicle solutions with fast delivery."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Integrated Logistics","description":"Multi-modal transport, customs clearance, and Djibouti–Ethiopia corridor logistics with speed and reliability."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Construction Management","description":"Infrastructure and commercial real estate projects across Africa, combining global standards with local expertise."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Agri-Trade","description":"Export and import of wheat, coffee, horticulture, and premium agricultural goods with sustainable practices."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Business Consulting","description":"Market entry strategies, legal registration, and compliance support for companies entering African markets."}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Social Responsibility","description":"Community empowerment programs focusing on women, youth, and economic development in Africa."}}
+      ]
+    },
+    "@graph":[
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"Where can I buy cars in Ethiopia?","acceptedAnswer":{"@type":"Answer","text":"Eashgroup offers high-end cars, armoured vehicles, and electric cars for sale in Ethiopia with nationwide delivery."}},
+          {"@type":"Question","name":"How can I buy a car in Africa?","acceptedAnswer":{"@type":"Answer","text":"You can buy a car anywhere in Africa through Eashgroup's automotive division, with delivery to major African cities."}},
+          {"@type":"Question","name":"Do you offer logistics services in Africa?","acceptedAnswer":{"@type":"Answer","text":"Yes, we provide multi-modal transport, customs clearance, and specialized Djibouti–Ethiopia corridor logistics."}},
+          {"@type":"Question","name":"What construction projects have you managed in Africa?","acceptedAnswer":{"@type":"Answer","text":"We manage infrastructure and commercial real estate projects in Ethiopia, Djibouti, and other African countries."}},
+          {"@type":"Question","name":"Do you trade agricultural products in Africa?","acceptedAnswer":{"@type":"Answer","text":"Yes, we export and import coffee, wheat, flour, and horticultural products across African and global markets."}},
+          {"@type":"Question","name":"Do you offer business consulting in Africa?","acceptedAnswer":{"@type":"Answer","text":"We help companies navigate African markets with legal, tax, and compliance services."}},
+          {"@type":"Question","name":"What are your social responsibility programs?","acceptedAnswer":{"@type":"Answer","text":"Our programs empower women, support youth entrepreneurship, and help small businesses grow in Africa."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="nav" class="nav transparent" aria-label="Primary">
+    <div class="wrap nav-inner">
+      <a href="#home" class="brand" aria-label="Eashgroup Home">
+        <img src="logo.webp" alt="Eashgroup logo in blue and gold" loading="eager" />
+        <span>Eashgroup</span>
+      </a>
+      <button class="hamb btn alt" aria-controls="menu" aria-expanded="false" id="hamb">Menu</button>
+      <div id="menu" class="menu" role="menubar">
+        <a role="menuitem" href="#home" data-sec="home">Home<span class="dot"></span></a>
+        <a role="menuitem" href="#about" data-sec="about">About<span class="dot"></span></a>
+        <a role="menuitem" href="#services" data-sec="services">Services<span class="dot"></span></a>
+        <a role="menuitem" href="#contact" data-sec="contact">Contact<span class="dot"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero" role="banner">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="headline">Driving Excellence Across Africa</h1>
+        <p class="sub">Automotive • Integrated Logistics • Construction • Agri‑Trade • Consulting • Social Impact</p>
+        <div class="cta-row">
+          <a class="btn" id="downloadBrochure" href="East Africa Smart Hub.pdf" download>Download PDF Brochure</a>
+          <a class="btn" href="#contact">Let's work together</a>
+        </div>
+        <p class="muted">Optimized for Ethiopia & Djibouti searches — fast, mobile‑first, SEO‑ready.</p>
+      </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="sec">
+    <div class="wrap split">
+      <div>
+        <span class="tag">About us</span>
+        <h2>East Africa Smart Hub</h2>
+        <p class="muted">Eashgroup delivers end‑to‑end solutions across Africa with a strong focus on Ethiopia and Djibouti. We combine market knowledge, trusted partnerships, and operational excellence to accelerate projects in mobility, trade, infrastructure, and entrepreneurship.</p>
+        <div class="divider"></div>
+        <ul class="muted" style="padding-left:18px">
+          <li>Registered presence in Djibouti & Ethiopia</li>
+          <li>Cross‑border expertise on the Djibouti–Ethiopia corridor</li>
+          <li>Fast delivery, compliance, and on‑the‑ground support</li>
+        </ul>
+      </div>
+      <figure class="card">
+        <img src="logo.webp" alt="Eashgroup operations leadership in Addis Ababa and Djibouti" loading="lazy" width="640" height="420" />
+        <figcaption class="muted">People‑first execution, technology‑enabled delivery.</figcaption>
+      </figure>
+    </div>
+    <div class="about-stats">
+    <div class="stat-box">
+        <span class="num" data-target="4">0</span>
+        <p>Regional Offices</p>
+    </div>
+    <div class="stat-box">
+        <span class="num" data-target="5">0</span>
+        <p>Storage Facilities</p>
+    </div>
+    <div class="stat-box">
+        <span class="num" data-target="10">0</span>
+        <p>Operating Licenses</p>
+    </div>
+    <div class="stat-box">
+        <span class="num" data-target="130">0</span>
+        <p>Professionals</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SUMMARY GRID -->
+<section id="services" class="sec">
+  <div class="wrap">
+    <span class="tag">Services</span>
+    <h2>What we do</h2>
+    <p class="muted">Six divisions with deep local knowledge and reliable regional networks.</p>
+    <div class="grid" style="margin-top:16px">
+
+      <a class="svc" href="#svc-automotive" aria-label="Automotive — buy cars in Ethiopia & Africa, EVs, armoured conversions">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <h3>Automotive</h3>
+        <p>Buy cars in Ethiopia & across Africa, including EVs and armoured conversions.</p>
+      </a>
+
+      <a class="svc" href="#svc-logistics" aria-label="Integrated Logistics — multimodal transport Djibouti–Ethiopia corridor">
+        <div class="icon"><i class="fas fa-truck-moving"></i></div>
+        <h3>Integrated Logistics</h3>
+        <p>Multi-modal transport, customs, and corridor expertise from Djibouti to Ethiopia.</p>
+      </a>
+
+      <a class="svc" href="#svc-construction" aria-label="Construction Management — infrastructure & commercial projects">
+        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+        <h3>Construction Management</h3>
+        <p>Infrastructure and commercial projects with rigorous standards.</p>
+      </a>
+
+      <a class="svc" href="#svc-agri" aria-label="Agri-Trade — export/import wheat, coffee, horticulture">
+        <div class="icon"><i class="fas fa-seedling"></i></div>
+        <h3>Agri-Trade</h3>
+        <p>Export/import of wheat, coffee, and horticulture with traceability.</p>
+      </a>
+
+      <a class="svc" href="#svc-consulting" aria-label="Business Consulting — market entry, compliance">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Business Consulting</h3>
+        <p>Market entry, legal registration, and compliance support.</p>
+      </a>
+
+      <a class="svc" href="#svc-csr" aria-label="Social Responsibility — women, youth, small business empowerment">
+        <div class="icon"><i class="fas fa-hands-helping"></i></div>
+        <h3>Social Responsibility</h3>
+        <p>Women & youth empowerment and SME acceleration.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- DETAILED SERVICE SECTIONS -->
+  <section id="svc-automotive" class="sec">
+    <div class="wrap split">
+      <figure class="card"><img src="car.webp" alt="Electric cars and SUVs for sale in Ethiopia" loading="lazy" width="640" height="420"></figure>
+      <div>
+        <span class="tag">Automotive</span>
+        <h2>Buy cars in Ethiopia & Africa</h2>
+        <p class="muted">High‑end vehicles with fast delivery, electric vehicle solutions, and armoured conversions. Optimized procurement and after‑sales coordination via trusted partners.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>EVs, SUVs, pickups, and armoured (B6/B7) options</li>
+          <li>Registration & delivery across Ethiopia and major African cities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="svc-logistics" class="sec">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Integrated Logistics</span>
+        <h2>Djibouti–Ethiopia Corridor</h2>
+        <p class="muted">Reliable multi‑modal transport, customs brokerage, and last‑mile delivery with visibility. Tailored to humanitarian, commercial, and infrastructure needs.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>Port handling, warehousing, and inland transport</li>
+          <li>Time‑critical moves and duty optimization</li>
+          <li>Cross‑border compliance & documentation</li>
+        </ul>
+      </div>
+      <figure class="card"><img src="transport.webp" alt="Djibouti to Ethiopia logistics corridor freight services" loading="lazy" width="640" height="420"></figure>
+    </div>
+  </section>
+
+  <section id="svc-construction" class="sec">
+    <div class="wrap split">
+      <figure class="card"><img src="building.webp" alt="Construction management on African infrastructure and commercial projects" loading="lazy" width="640" height="420"></figure>
+      <div>
+        <span class="tag">Construction Management</span>
+        <h2>Infrastructure & Commercial Delivery</h2>
+        <p class="muted">Owner’s rep services, procurement, and site supervision backed by quality, safety, and schedule control.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>Design‑build coordination & permitting</li>
+          <li>Vendor vetting and contract administration</li>
+          <li>HSE programs tailored to local standards</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="svc-agri" class="sec">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Agri‑Trade</span>
+        <h2>Export & Import</h2>
+        <p class="muted">Coffee, wheat, horticulture. We prioritize traceability, quality, and reliable delivery windows.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>Origin programs with farmer cooperatives</li>
+          <li>Quality control & certifications</li>
+          <li>Cold‑chain and bulk logistics options</li>
+        </ul>
+      </div>
+      <figure class="card"><img src="coffee.webp" alt="Ethiopian coffee and agricultural trade exports" loading="lazy" width="640" height="420"></figure>
+    </div>
+  </section>
+
+  <section id="svc-consulting" class="sec">
+    <div class="wrap split">
+      <figure class="card"><img src="administration.webp" alt="Business consulting and market entry services in Africa" loading="lazy" width="640" height="420"></figure>
+      <div>
+        <span class="tag">Business Consulting</span>
+        <h2>Market Entry & Compliance</h2>
+        <p class="muted">From company setup and licensing to tax and HR frameworks. We make Africa entry practical and compliant.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>Legal registration and representation</li>
+          <li>Tax & labor compliance guidance</li>
+          <li>Go‑to‑market and partnership development</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="svc-csr" class="sec">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Social Responsibility</span>
+        <h2>Empowering People</h2>
+        <p class="muted">Programs for women and youth entrepreneurship, skills training, and small‑business growth. We build local capacity that lasts.</p>
+        <ul class="muted" style="padding-left:18px">
+          <li>Women‑led enterprise funding</li>
+          <li>Youth skills & internship pipelines</li>
+          <li>SME acceleration & market access</li>
+        </ul>
+      </div>
+      <figure class="card"><img src="bae.webp" alt="Women and youth entrepreneurship programs in Africa" loading="lazy" width="640" height="420"></figure>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="sec contact">
+    <div class="wrap">
+      <h2>Let's Work Together</h2>
+      <p class="muted">Tell us about your project. We’ll reply within 1–2 business days.</p>
+      <form action="#" method="post" onsubmit="return submitForm(event)">
+        <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+        <textarea name="message" placeholder="Message" aria-label="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="divider"></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Djibouti Office</h3>
+          <p>Djibouti City, Djibouti<br>Tel: <a href="tel:+25377853170">+253 77 85 31 70</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Ethiopia Office</h3>
+          <p>Addis Ababa, Ethiopia<br>Tel: <a href="tel:+251912365683">+251 91 236 5683</a></p>
+        </div>
+        <div class="contact-card">
+         <h3>France Office</h3>
+         <p>Rennes, France<br>Tel: <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+        </div>
+      </div>
+    </div>
+  </section>    
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="wrap foot">
+    <a href="https://www.eashgroup.com" class="footer-link">© 2025 Eashgroup — East Africa Smart Hub. All rights reserved.</a>
+    <div class="social" aria-label="Social links">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/company/eashgroup" aria-label="LinkedIn" rel="noopener" target="_blank">
+        in
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://telegram.com/eashgroup" aria-label="Telegram" rel="noopener" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z" fill="#fff"/>
+        </svg>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/25377853170" aria-label="Whatsapp" rel="noopener" target="_blank">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#fff"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // ---------- YEAR ----------
+  // Remove or fix this if you don't have <span id="y"></span> in your footer
+  // document.getElementById('y').textContent = new Date().getFullYear();
+
+  // ---------- MOBILE MENU TOGGLE ----------
+  const hamb = document.getElementById('hamb');
+  const menu = document.getElementById('menu');
+  hamb.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    hamb.setAttribute('aria-expanded', String(open));
+  });
+
+  // ---------- SMOOTH SCROLL ----------
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        e.preventDefault();
+        const targetEl = document.querySelector(id);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          hamb.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
+
+  // ---------- STICKY NAV BACKGROUND ----------
+  const nav = document.getElementById('nav');
+  const hero = document.getElementById('home');
+  const heroObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        nav.classList.remove('solid');
+        nav.classList.add('transparent');
+      } else {
+        nav.classList.add('solid');
+        nav.classList.remove('transparent');
+      }
+    });
+  }, { root: null, threshold: 0.1 });
+  heroObserver.observe(hero);
+
+  // ---------- ACTIVE SECTION DOT ----------
+  const sections = ['home','about','services','contact','svc-automotive','svc-logistics','svc-construction','svc-agri','svc-consulting','svc-csr'];
+  const links = Array.from(document.querySelectorAll('.menu a'));
+  const linkBySec = new Map(
+    links.map(l => [l.dataset.sec || l.getAttribute('href').slice(1), l])
+  );
+
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = linkBySec.get(id);
+      if (!link) return;
+
+      if (entry.isIntersecting) {
+        links.forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.3 }); // Lower threshold for more reliable activation
+
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) sectionObserver.observe(el);
+  });
+
+  // ---------- BROCHURE CLICK TRACKING ----------
+  const brochureBtn = document.getElementById('downloadBrochure');
+  if (brochureBtn) {
+    brochureBtn.addEventListener('click', () => {
+      console.log('Brochure downloaded: Eashgroup-Africa-Ethiopia-Car-Sales.pdf');
+    });
+  }
+
+  // ---------- HERO TEXT ANIMATION ----------
+  window.addEventListener('load', () => {
+    // Select hero headline, sub, cta-row, and muted text
+    const heroText = document.querySelectorAll('#home .headline, #home .sub, #home .cta-row, #home .muted');
+    heroText.forEach((el, i) => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = `opacity 0.8s ease-out ${i * 0.2}s, transform 0.8s ease-out ${i * 0.2}s`;
+      setTimeout(() => {
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, 100 + i * 200);
+    });
+  });
+
+  // ---------- SMOOTH COUNTER ----------
+  function animateCounter(el, target, duration = 2000) {
+    const startTime = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = Math.floor(progress * target); // removed || 1
+      el.textContent = value + (progress === 1 && target >= 130 ? "+" : "");
+      if (progress < 1) requestAnimationFrame(update);
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const counters = document.querySelectorAll(".num");
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute("data-target"));
+        if (!isNaN(target)) {
+          animateCounter(el, target, target >= 130 ? 3000 : 1500);
+        }
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.2 }); // Lower threshold for earlier trigger
+
+  counters.forEach(counter => counterObserver.observe(counter));
+</script>
+
+</body>
+</html>
